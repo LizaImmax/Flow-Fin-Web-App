@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}Budgeting Tools - FlowFin{% endblock %}
+
+{% block content %}
+    <section style="background-color: #fff3cd; padding: 20px;">
+        <h2>Budgeting Tools</h2>
+        <!-- Add dynamic content for creating and managing budgets -->
+        <form>
+            <label for="budgetCategory">Budget Category:</label>
+            <select id="budgetCategory" name="budgetCategory">
+                <option value="groceries">Groceries</option>
+                <option value="utilities">Utilities</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="budgetAmount">Budget Amount:</label>
+            <input type="text" id="budgetAmount" name="budgetAmount" required>
+
+            <button type="submit">Set Budget</button>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}Expense Tracking - FlowFin{% endblock %}
+
+{% block content %}
+    <section style="background-color: #d4edda; padding: 20px;">
+        <h2>Expense Tracking</h2>
+        <!-- Add dynamic content for tracking and categorizing expenses -->
+        <form>
+            <label for="expenseAmount">Expense Amount:</label>
+            <input type="text" id="expenseAmount" name="expenseAmount" required>
+            
+            <label for="expenseCategory">Expense Category:</label>
+            <select id="expenseCategory" name="expenseCategory">
+                <option value="groceries">Groceries</option>
+                <option value="utilities">Utilities</option>
+                <!-- Add more categories as needed -->
+            </select>
+
+            <label for="expenseNotes">Notes:</label>
+            <textarea id="expenseNotes" name="expenseNotes"></textarea>
+
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home - FlowFin{% endblock %}
+
+{% block content %}
+    <section style="background-color: #d4edda; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <!-- Sign Up / Login Buttons -->
+            <div>
+                <a href="{{ url_for('signup') }}" style="color: black; font-weight: bold; margin-right: 10px;">Sign Up</a>
+                <a href="{{ url_for('login') }}" style="color: black; font-weight: bold;">Login</a>
+            </div>
+        </div>
+        <h2>Welcome to FlowFin!</h2>
+        <p>Explore the future of consumer finance with our innovative IoT-based financial services.</p>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+            <!-- Smart Home Finance Manager Component -->
+            <div style="background-color: #fff; padding: 20px; margin: 10px; flex: 1; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: black; font-weight: bold;">Smart Home Finance Manager</h3>
+                <p>Effortlessly manage your energy bills with our Smart Home Finance Manager. Stay in control of your home's energy consumption.</p>
+                <a href="{{ url_for('smart_home') }}">Learn More</a>
+                <!-- Add image for Smart Home Finance Manager -->
+                <img src="/static/images/smart_home_image.jpg" alt="Smart Home Image">
+            </div>
+
+            <!-- Connected Car Finance Hub Component -->
+            <div style="background-color: #fff; padding: 20px; margin: 10px; flex: 1; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: black; font-weight: bold;">Connected Car Finance Hub</h3>
+                <p>Experience financial services tailored for your connected car. Explore innovative solutions for your automotive finance needs.</p>
+                <a href="{{ url_for('connected_car') }}">Learn More</a>
+                <!-- Add image for Connected Car Finance Hub -->
+                <img src="/static/images/connected_car_image.jpg" alt="Connected Car Image">
+            </div>
+
+            <!-- Health Tracker Insurance Integration Component -->
+            <div style="background-color: #fff; padding: 20px; margin: 10px; flex: 1; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: black; font-weight: bold;">Health Tracker Insurance Integration</h3>
+                <p>Take control of your health and financial well-being. Our Health Tracker Insurance Integration ensures peace of mind during emergencies.</p>
+                <a href="{{ url_for('health_tracker') }}">Learn More</a>
+                <!-- Add image for Health Tracker Insurance Integration -->
+                <img src="/static/images/health_tracker_image.jpg" alt="Health Tracker Image">
+            </div>
+
+            <!-- Grocery Shopping Budget Optimizer Component -->
+            <div style="background-color: #fff; padding: 20px; margin: 10px; flex: 1; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: black; font-weight: bold;">Grocery Shopping Budget Optimizer</h3>
+                <p>Manage your grocery expenses efficiently. Our Grocery Shopping Budget Optimizer helps you stay within budget without compromising on quality.</p>
+                <a href="{{ url_for('grocery_shopping') }}">Learn More</a>
+                <!-- Add image for Grocery Shopping Budget Optimizer -->
+                <img src="/static/images/grocery_shopping_image.jpg" alt="Grocery Shopping Image">
+            </div>
+
+            <!-- Wearable Finance Assistant Component -->
+            <div style="background-color: #fff; padding: 20px; margin: 10px; flex: 1; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: black; font-weight: bold;">Wearable Finance Assistant</h3>
+                <p>Experience personalized financial guidance at your fingertips. Our Wearable Finance Assistant revolutionizes the way you manage your finances.</p>
+                <a href="{{ url_for('wearable_finance') }}">Learn More</a>
+                <!-- Add image for Wearable Finance Assistant -->
+                <img src="/static/images/wearable_finance_image.jpg" alt="Wearable Finance Image">
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

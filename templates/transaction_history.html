@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}Transaction History - FlowFin{% endblock %}
+
+{% block content %}
+    <section style="background-color: #bee5eb; padding: 20px;">
+        <h2>Transaction History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add dynamic content for displaying transaction history -->
+                <tr>
+                    <td>2022-03-01</td>
+                    <td>$50.00</td>
+                    <td>Groceries</td>
+                    <td>Weekly grocery shopping</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+{% endblock %}

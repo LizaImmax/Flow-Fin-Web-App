@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}Settings - FlowFin{% endblock %}
+
+{% block content %}
+    <section style="background-color: #c3e6cb; padding: 20px;">
+        <h2>Settings</h2>
+        <!-- Add dynamic content for configuring application settings -->
+        <form>
+            <label for="notificationPreferences">Notification Preferences:</label>
+            <input type="checkbox" id="notificationPreferences" name="notificationPreferences" checked>
+            Receive notifications
+
+            <label for="theme">Theme:</label>
+            <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <button type="submit">Save Settings</button>
+        </form>
+    </section>
+{% end
