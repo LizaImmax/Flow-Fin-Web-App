@@ -1,7 +1,11 @@
 Project Name: FlowFin
+
+
 This was a solo project done by Elizabeth Muthoni. 
 
 Description of the Project
+
+
 Overview of FlowFin: Financial services embedded in the Internet of Things (IoT).
 
 
