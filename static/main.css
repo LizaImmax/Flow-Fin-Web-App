@@ -1,0 +1,68 @@
+/* main.css */
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #28a745; /* Greenish color */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333; /* Dark grayish color */
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for your components */
+section {
+    background-color: #d4edda;
+    padding: 20px;
+}
+
+.component-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.component-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.component-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.component-text p {
+    margin-bottom: 10px;
+}
+
+.component-text a {
+    color: black;
+    font-weight: bold;
+}
