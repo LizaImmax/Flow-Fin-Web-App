@@ -12,7 +12,7 @@ app.secret_key = 'your_secret_key'  # Change this to a secure secret key
 load_dotenv()
 
 # Access the DATABASE_URL environment variable
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)

@@ -1,4 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import login_user, login_required, logout_user, current_user
+from basemodel import RegistrationForm, UserProfileForm, SmartHomeForm, ConnectedCarForm, HealthTrackerForm, GroceryShoppingForm, WearableFinanceForm
+from config import app, db, bcrypt, login_manager  
+from models.connected_car import ConnectedCar
+from models.grocery_shopping import GroceryShopping
+from models.health_tracker import HealthTracker
+from models.wearable_finance import WearableFinance
+from models.smart_home import SmartHome
+from models.user import User
 
 app = Flask(__name__)
 
@@ -66,6 +76,13 @@ def settings():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()  # Logs the user out
+    return redirect(url_for('login'))  # Redirect to the login page or any other desired page
+
 
 if __name__ == '__main__':
     app.run(debug=True)
