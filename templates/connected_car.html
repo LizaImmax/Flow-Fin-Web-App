@@ -3,9 +3,50 @@
 {% block title %}Connected Car - FlowFin{% endblock %}
 
 {% block content %}
-    <section style="background-color: #d1ecf1; padding: 20px;">
+    <section class="connected-car-section">
         <h2>Connected Car Finance Hub</h2>
         <p>Experience financial services tailored for your connected car. Explore innovative solutions for your automotive finance needs.</p>
-        <!-- Add specific content for the Connected Car Finance Hub -->
+        
+        <h3>How It Works:</h3>
+        <ol>
+            <li><strong>Connect Your Car:</strong> Link your car to FlowFin's finance hub securely.</li>
+            <li><strong>Set Up Finance Preferences:</strong> Utilize the drop-down menus below to customize your automotive finance settings.</li>
+            <li><strong>Real-Time Monitoring:</strong> Gain insights into your car's financial performance and expenses in real-time.</li>
+            <li><strong>Optimize Spending:</strong> Receive personalized financial tips to optimize your automotive expenses.</li>
+        </ol>
+        
+        <h3>Automotive Finance Preferences:</h3>
+        <form action="#" method="post">
+            <label for="loanProvider">Loan Provider:</label>
+            <select id="loanProvider" name="loanProvider">
+                <option value="provider1">Provider 1</option>
+                <option value="provider2">Provider 2</option>
+                <!-- Add more options based on available loan providers -->
+            </select>
+            
+            <label for="paymentFrequency">Payment Frequency:</label>
+            <select id="paymentFrequency" name="paymentFrequency">
+                <option value="monthly">Monthly</option>
+                <option value="bi-weekly">Bi-Weekly</option>
+                <option value="quarterly">Quarterly</option>
+            </select>
+            
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="creditCard">Credit Card</option>
+                <option value="autoDebit">Auto Debit</option>
+                <!-- Add more options based on available payment methods -->
+            </select>
+            
+            <button type="submit">Save Settings</button>
+        </form>
+        
+        <p>FlowFin's Connected Car Finance Hub empowers you to manage your automotive finances efficiently and enjoy a seamless driving experience!</p>
     </section>
 {% endblock %}
+<style>
+    .connected-car-section {
+        background-color: #d1ecf1;
+        padding: 20px;
+    }
+</style>

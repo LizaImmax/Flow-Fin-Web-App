@@ -11,6 +11,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -20,6 +23,7 @@
         }
 
         main {
+            flex: 1; /* Allow main content to grow to fill available space */
             padding: 20px;
         }
 
@@ -27,9 +31,6 @@
             background-color: #333; /* Dark grayish color */
             padding: 10px;
             text-align: center;
-            position: fixed; /* Change to fixed instead of absolute */
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>

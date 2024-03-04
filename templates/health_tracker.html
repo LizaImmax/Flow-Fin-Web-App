@@ -3,9 +3,52 @@
 {% block title %}Health Tracker - FlowFin{% endblock %}
 
 {% block content %}
-    <section style="background-color: #bee5eb; padding: 20px;">
+    <section class="health-tracker-section">
         <h2>Health Tracker Insurance Integration</h2>
         <p>Take control of your health and financial well-being. Our Health Tracker Insurance Integration ensures peace of mind during emergencies.</p>
-        <!-- Add specific content for the Health Tracker Insurance Integration -->
+        
+        <h3>How It Works:</h3>
+        <ol>
+            <li><strong>Connect Your Health Tracker:</strong> Integrate your health tracker with FlowFin for real-time health monitoring.</li>
+            <li><strong>Set Up Emergency Contacts:</strong> Utilize the drop-down menus below to set emergency contacts and health preferences.</li>
+            <li><strong>Insurance Integration:</strong> Seamlessly integrate your health insurance information for quick access during emergencies.</li>
+            <li><strong>Stay Prepared:</strong> Receive personalized health and financial tips to stay prepared and maintain well-being.</li>
+        </ol>
+        
+        <h3>Insurance Integration Preferences:</h3>
+        <form action="#" method="post">
+            <label for="emergencyContacts">Emergency Contacts:</label>
+            <select id="emergencyContacts" name="emergencyContacts" multiple>
+                <option value="contact1">Emergency Contact 1</option>
+                <option value="contact2">Emergency Contact 2</option>
+                <option value="contact3">Emergency Contact 3</option>
+                <!-- Add more options based on available emergency contacts -->
+            </select>
+            
+            <label for="healthPreferences">Health Preferences:</label>
+            <select id="healthPreferences" name="healthPreferences">
+                <option value="fitness">Fitness</option>
+                <option value="nutrition">Nutrition</option>
+                <option value="sleep">Sleep</option>
+                <!-- Add more options based on common health preferences -->
+            </select>
+            
+            <label for="insuranceProvider">Insurance Provider:</label>
+            <select id="insuranceProvider" name="insuranceProvider">
+                <option value="provider1">Provider 1</option>
+                <option value="provider2">Provider 2</option>
+                <!-- Add more options based on available insurance providers -->
+            </select>
+            
+            <button type="submit">Save Settings</button>
+        </form>
+        
+        <p>With FlowFin's Health Tracker Insurance Integration, you can prioritize your health and be financially prepared for any unexpected situation!</p>
     </section>
 {% endblock %}
+<style>
+    .health-tracker-section {
+        background-color: #bee5eb;
+        padding: 20px;
+    }
+</style>

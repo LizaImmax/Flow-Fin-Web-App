@@ -3,9 +3,51 @@
 {% block title %}Smart Home - FlowFin{% endblock %}
 
 {% block content %}
-    <section style="background-color: #f8d7da; padding: 20px;">
+    <section class="smart-home-section">
         <h2>Smart Home Finance Manager</h2>
         <p>Effortlessly manage your energy bills with our Smart Home Finance Manager. Stay in control of your home's energy consumption.</p>
-        <!-- Add specific content for the Smart Home Finance Manager -->
+        
+        <h3>How It Works:</h3>
+        <ol>
+            <li><strong>Connect Your Devices:</strong> Integrate your smart home devices with FlowFin to track energy usage.</li>
+            <li><strong>Set Up Energy Bills:</strong> Use the drop-down menus below to configure your energy billing preferences.</li>
+            <li><strong>Automated Monitoring:</strong> FlowFin monitors your energy usage in real-time and provides insights.</li>
+            <li><strong>Save Money:</strong> Receive personalized tips to optimize energy consumption and reduce bills.</li>
+        </ol>
+        
+        <h3>Energy Bill Configuration:</h3>
+        <form action="#" method="post">
+            <label for="electricityProvider">Electricity Provider:</label>
+            <select id="electricityProvider" name="electricityProvider">
+                <option value="provider1">Provider 1</option>
+                <option value="provider2">Provider 2</option>
+                <!-- Add more options based on available electricity providers -->
+            </select>
+            
+            <label for="billingCycle">Billing Cycle:</label>
+            <select id="billingCycle" name="billingCycle">
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="annually">Annually</option>
+            </select>
+            
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="creditCard">Credit Card</option>
+                <option value="bankTransfer">Bank Transfer</option>
+                <!-- Add more options based on available payment methods -->
+            </select>
+            
+            <button type="submit">Save Settings</button>
+        </form>
+        
+        <p>With FlowFin's Smart Home Finance Manager, you have the power to control your expenses and contribute to a sustainable future!</p>
     </section>
 {% endblock %}
+<style>
+    .smart-home-section {
+        background-color: #f8d7da;
+        padding: 20px;
+        color: #000; /* Black text color */
+    }
+</style>

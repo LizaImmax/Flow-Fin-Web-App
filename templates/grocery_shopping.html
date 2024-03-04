@@ -3,9 +3,46 @@
 {% block title %}Grocery Shopping - FlowFin{% endblock %}
 
 {% block content %}
-    <section style="background-color: #d4edda; padding: 20px;">
+    <section class="grocery-shopping-section">
         <h2>Grocery Shopping Budget Optimizer</h2>
         <p>Manage your grocery expenses efficiently. Our Grocery Shopping Budget Optimizer helps you stay within budget without compromising on quality.</p>
-        <!-- Add specific content for the Grocery Shopping Budget Optimizer -->
+        
+        <h3>How It Works:</h3>
+        <ol>
+            <li><strong>Create Your Grocery List:</strong> Add items to your digital grocery list based on your needs and preferences.</li>
+            <li><strong>Set Your Budget:</strong> Utilize the drop-down menus below to set your grocery budget and preferences.</li>
+            <li><strong>Smart Recommendations:</strong> Receive real-time recommendations to optimize your shopping list within budget.</li>
+            <li><strong>Track Your Spending:</strong> Monitor your grocery expenses and make informed decisions for future shopping.</li>
+        </ol>
+        
+        <h3>Grocery Budget Preferences:</h3>
+        <form action="#" method="post">
+            <label for="budgetAmount">Budget Amount:</label>
+            <input type="number" id="budgetAmount" name="budgetAmount" placeholder="Enter your budget amount" required>
+            
+            <label for="preferredStore">Preferred Store:</label>
+            <select id="preferredStore" name="preferredStore">
+                <option value="store1">Store 1</option>
+                <option value="store2">Store 2</option>
+                <!-- Add more options based on available grocery stores -->
+            </select>
+            
+            <label for="shoppingFrequency">Shopping Frequency:</label>
+            <select id="shoppingFrequency" name="shoppingFrequency">
+                <option value="weekly">Weekly</option>
+                <option value="bi-weekly">Bi-Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            
+            <button type="submit">Save Settings</button>
+        </form>
+        
+        <p>FlowFin's Grocery Shopping Budget Optimizer empowers you to make smart choices, save money, and enjoy stress-free grocery shopping!</p>
     </section>
 {% endblock %}
+<style>
+    .grocery-shopping-section {
+        background-color: #d4edda;
+        padding: 20px;
+    }
+</style>

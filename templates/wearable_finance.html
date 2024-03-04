@@ -3,9 +3,52 @@
 {% block title %}Wearable Finance - FlowFin{% endblock %}
 
 {% block content %}
-    <section style="background-color: #fff3cd; padding: 20px;">
+    <section class="wearable-finance-section">
         <h2>Wearable Finance Assistant</h2>
         <p>Experience personalized financial guidance at your fingertips. Our Wearable Finance Assistant revolutionizes the way you manage your finances.</p>
-        <!-- Add specific content for the Wearable Finance Assistant -->
+        
+        <h3>How It Works:</h3>
+        <ol>
+            <li><strong>Connect Your Wearable Device:</strong> Sync your wearable device with FlowFin for real-time financial insights.</li>
+            <li><strong>Set Up Financial Goals:</strong> Utilize the drop-down menus below to set personalized financial goals and preferences.</li>
+            <li><strong>Daily Monitoring:</strong> Receive daily financial updates and personalized tips on your wearable device.</li>
+            <li><strong>Achieve Your Goals:</strong> Track your progress, make informed financial decisions, and achieve your financial objectives.</li>
+        </ol>
+        
+        <h3>Wearable Finance Preferences:</h3>
+        <form action="#" method="post">
+            <label for="financialGoal">Financial Goal:</label>
+            <select id="financialGoal" name="financialGoal">
+                <option value="saveForVacation">Save for Vacation</option>
+                <option value="retirement">Retirement Planning</option>
+                <option value="emergencyFund">Build Emergency Fund</option>
+                <!-- Add more options based on common financial goals -->
+            </select>
+            
+            <label for="notificationFrequency">Notification Frequency:</label>
+            <select id="notificationFrequency" name="notificationFrequency">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            
+            <label for="expenseCategories">Expense Categories:</label>
+            <select id="expenseCategories" name="expenseCategories" multiple>
+                <option value="groceries">Groceries</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="transportation">Transportation</option>
+                <!-- Add more options based on common expense categories -->
+            </select>
+            
+            <button type="submit">Save Settings</button>
+        </form>
+        
+        <p>With FlowFin's Wearable Finance Assistant, you can take control of your financial journey and make informed decisions effortlessly!</p>
     </section>
 {% endblock %}
+<style>
+    .wearable-finance-section {
+        background-color: #fff3cd;
+        padding: 20px;
+    }
+</style>
